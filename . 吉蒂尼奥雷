@@ -1,0 +1,18 @@
+#include "stdio.h"
+int main(void)
+{
+int i,j,k,num;
+printf("水仙花数为：");
+for (num=100;num<1000;num++)
+{
+i=num/100;
+j=num/10%10;
+k=num%10;
+if(num==i*i*i+j*j*j+k*k*k)
+{
+printf("%-5d",num);
+}
+}
+printf("作者：朱佳宁\n");
+}
+
